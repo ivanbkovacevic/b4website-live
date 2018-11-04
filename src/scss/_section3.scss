@@ -1,0 +1,64 @@
+.section3{
+    text-align: center;
+   
+    h1{
+        margin-top: 148px;
+        @include font-size(3.2);
+        padding: 5px;
+    }
+
+    h6{
+        @include font-size(1.4);
+        margin-bottom: 26px;
+    }
+
+    p{
+        @include font-size(1.4);
+        min-height: 100px;
+    }
+
+    a{
+        @include font-size(1.8);
+        text-decoration: none;
+        color:$color-text-red;
+    }
+
+    .head-p{
+        width: 768px;
+        margin:0 auto;
+        margin-bottom: 68px;
+        @include font-size(1.8);
+    }
+
+    h2{
+        @include font-size(9.3);
+        font-weight: 100;
+        color:$color-text-red;
+    }
+    .brojeviRow{
+        margin-bottom: 60px;
+        padding: 0 110px;
+    }
+
+    .brojeviCol{  
+        padding: 0 12px;
+    }
+
+    .bottomRow{
+        color:$color-text-red;
+        border-top: 2px solid $color-gray-light;
+        font-size: 1.2rem;
+    }
+
+    a{
+        text-decoration: none;
+        &:hover .iconica-strelica{
+            animation: strelica-levo-desno 0.4s forwards 3;
+          }
+    }
+
+    .iconica-strelica{
+        margin-left: 18px;
+    }
+}
+

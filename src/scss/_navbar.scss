@@ -1,0 +1,41 @@
+.navbar{
+    position: absolute;
+    padding-top: 42px;
+    top:0px;
+    background-color: transparent !important;
+    z-index: 555;
+
+.navbar-expand-md{
+    background-color: transparent !important;
+    z-index: 555;
+}
+.navbar-toggler{
+    margin-left: 300px;
+
+   
+}
+.navbar-toggler-icon{
+    border: 1px solid white;
+    color:white;
+}
+.iconica-brand{
+    height: 30px;
+}
+
+.nav-link {
+    color:white;
+    text-decoration: none;
+    @include font-size(1.4);
+    transition: all 0.3s;
+    padding-left: 600px;
+
+    &:hover{
+            color:$color-text-red;       
+    }
+
+    }
+}
+
+
+
+

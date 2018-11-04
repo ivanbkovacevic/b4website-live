@@ -1,0 +1,40 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    border-top: 1px solid $color-gray;
+    padding: 23px 60px;
+    color:$color-gray;
+
+    .foterItems {
+        display: inline-block;
+
+    }
+    a{
+        @include redArrowa;
+        
+        @include hoverArrow;
+    }
+    
+    svg{
+        @include redArrowsvg;
+    }
+  
+}
+.testCon{
+    background-color: green;
+    height: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
+
+    .test{
+        background-color: red;
+        width: 100px;
+        height: 30px;
+        margin:auto;
+      
+    }
+
+
+
+}
