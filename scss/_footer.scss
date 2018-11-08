@@ -21,20 +21,52 @@ footer {
     }
   
 }
-.testCon{
-    background-color: green;
-    height: 100px;
+
+.linearGradient{
+    min-height: 300px;
+    width: 900px;
+    margin: 0 auto;
+    background-image: 
+      url('../assets/img/cikasabradom.jpg');
+   
+    background-size: cover;
+    background-position: 0% 0%;
     margin-bottom: 100px;
-    padding: 50px;
-
-    .test{
-        background-color: red;
-        width: 100px;
-        height: 30px;
-        margin:auto;
-      
+    overflow: hidden;
+  
+    &::before{
+        content: ".";
+        display: block;
+        height: 300px;
+        width: 1800px;
+        background-image: linear-gradient(to right,
+        red 50%,
+        green 50%
+        );
+        background-size: cover;
+        animation: G 3s forwards;
     }
+ 
 
-
-
+  
 }
+
+.test{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    h1{
+        font-size: calc(14px + (56 - 14) * ((100vw - 300px) / (1200 - 300)));
+    }
+   
+}
+@keyframes G{
+    0%{   margin-left: -100%;
+       }
+    100%{  margin-left: 100%;}
+  
+}
+
+
+

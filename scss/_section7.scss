@@ -25,6 +25,12 @@
         text-indent: 20px;
         @include font-size(1.5);
         color: $color-gray-light;
+        @include media-breakpoint-down(xs) { 
+            width: 250px;
+             }
+             @include media-breakpoint-down(md) { 
+                width: 232px;
+             }
 
     }
 
@@ -152,6 +158,19 @@
         color: white;
         padding: 15px 50px;
         @include font-size(1.4);
+        @include media-breakpoint-down(xs) { 
+            width: 72px;
+            background-image:url('../assets/svg/auto.svg');
+            background-repeat: no-repeat;
+           background-size: 70px ;
+           background-position: center;
+            background-color: white;
+             }
+             @include media-breakpoint-down(md) { 
+                width: 122px;
+                padding: 5px 10px;
+             }
+       
     }
 
     .bdtInformContainer {
@@ -208,7 +227,7 @@
             transform: rotate(-90deg);
             height: 16px;
             width: 16px;
-            fill:$color-text-red;
+            fill:red;;
         }
     }
     .iconice-sive{
