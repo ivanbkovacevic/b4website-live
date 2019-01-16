@@ -6,6 +6,7 @@
   "homepage":"https://ivanbkovacevic.github.io/b4website",
   "scripts": {
     "deploy":"npm run build&&gh-pages -d build",
+    "build":"npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
